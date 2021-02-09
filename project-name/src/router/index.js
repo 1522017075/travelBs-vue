@@ -7,6 +7,7 @@ import FindPassword from "@/components/FindPassword";
 
 Vue.use(Router)
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/login',
@@ -16,7 +17,10 @@ export default new Router({
     {
       path: '/index',
       name: 'Index',
-      component: Appindex
+      component: Appindex,
+      meta: {
+        requireAuth: true
+      }
     },
     {
       path: '/registe',
