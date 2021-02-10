@@ -19,7 +19,7 @@
         </router-link>
       </el-form-item>
       <el-form-item>
-        <el-button type="primary" style="width: 106px;background: #505458;border: none" v-on:click="check">登录
+        <el-button type="primary" style="width: 106px;background: #505458;border: none" v-on:click="login">登录
         </el-button>
       </el-form-item>
       <el-form-item>
@@ -94,6 +94,7 @@
                             // var data = this.loginForm
                             this.openFullScreen2()
                             _this.$store.commit('login', _this.loginForm)
+                            console.log("myInfo:" + JSON.stringify(successResponse.data.data[0]))
                             window.localStorage.setItem('myInfo', JSON.stringify(successResponse.data.data[0]))
                             setTimeout(() => {
                                 var path = this.$route.query.redirect
@@ -109,6 +110,9 @@
                     })
                     .catch(failResponse => {
                     })
+            },
+            loginTemp() {
+                this.$router.replace({path:'index'})
             }
         }
     }

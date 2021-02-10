@@ -1,12 +1,15 @@
 <template>
   <body id="poster">
   <div class="btnGroup">
-    <div class="pic1">
-    </div>
-    <div class="pic2">
-    </div>
-    <div class="pic3">
-    </div>
+    <router-link :to="{path:'/scene'}">
+      <div class="pic1"></div>
+    </router-link>
+    <router-link :to="{path:'/order'}">
+      <div class="pic2"></div>
+    </router-link>
+    <router-link :to="{path:'/myInfo'}">
+      <div class="pic3"></div>
+    </router-link>
   </div>
   </body>
 </template>

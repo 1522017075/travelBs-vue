@@ -15,21 +15,21 @@ Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 
-router.beforeEach((to, from, next) => {
-    if (to.meta.requireAuth) {
-      if (store.state.user.phone) {
-        next()
-      } else {
-        next({
-          path: 'login',
-          query: {redirect: to.fullPath}
-        })
-      }
-    } else {
-      next()
-    }
-  }
-)
+// router.beforeEach((to, from, next) => {
+//     if (to.meta.requireAuth) {
+//       if (store.state.user.phone) {
+//         next()
+//       } else {
+//         next({
+//           path: 'login',
+//           query: {redirect: to.fullPath}
+//         })
+//       }
+//     } else {
+//       next()
+//     }
+//   }
+// )
 
 /* eslint-disable no-new */
 new Vue({
