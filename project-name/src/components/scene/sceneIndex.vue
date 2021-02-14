@@ -1,6 +1,6 @@
 <template>
   <el-container>
-    <el-header>
+    <el-header height="260px">
       <div class='homepage'>
         <div class="content">
           <div class='box' id='box1'></div>
@@ -11,7 +11,11 @@
         </div>
       </div>
     </el-header>
-    <el-main>Main</el-main>
+    <el-main>
+      <div class="sceneArea">
+        <router-view/>
+      </div>
+    </el-main>
   </el-container>
 </template>
 
@@ -28,7 +32,7 @@
 
 <style scoped>
   .homepage{
-    height: 240px;
+    height: 260px;
     background: url(../../assets/jinciNav1.jpg) no-repeat ;
     background-size: 50% 120%;
     　　background-position: center center;
@@ -90,5 +94,9 @@
     position: relative;
     left: 150px;
     top: 20px;
+  }
+
+  .sceneArea{
+    margin-top: 10px;
   }
 </style>

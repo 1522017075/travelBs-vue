@@ -39,7 +39,7 @@
         data(key) {
             return {
                 navList: [
-                    {name: '/scene', navItem: '景点推荐'},
+                    {name: '/scene/sceneDetail', navItem: '景点推荐'},
                     {name: '/order', navItem: '游玩预定'},
                     {name: '/myInfo/myInfoManage', navItem: '个人主页'}
                 ],

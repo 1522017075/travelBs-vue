@@ -10,11 +10,17 @@ import myInfoIndex from "../components/myinfo/myInfoIndex"
 import Home from "../components/menu/Home";
 import MyInfoManage from "../components/myinfo/MyInfoManage";
 import MyHeadManage from "../components/myinfo/MyHeadManage";
+import SceneDetail from "../components/scene/SceneDetail";
+import SceneIntroduce from "../components/scene/SceneIntroduce";
 
 Vue.use(Router)
 export default new Router({
   mode: 'history',
   routes: [
+    {
+      path: '/',
+      redirect: "/login"
+    },
     {
       path: '/login',
       name: 'Login',
@@ -47,7 +53,19 @@ export default new Router({
         {
           path: '/scene',
           name: 'Scene',
-          component: sceneIndex
+          component: sceneIndex,
+          children: [
+            {
+              path: 'sceneDetail',
+              name:'/scene/sceneDetail',
+              component: SceneDetail,
+            },
+            {
+              path: 'sceneIntroduce',
+              name: '/scene/sceneIntroduce',
+              component: SceneIntroduce
+            }
+          ]
         },
         {
           path: '/order',

@@ -1,7 +1,7 @@
 <template>
   <body id="poster">
   <div class="btnGroup">
-    <router-link :to="{path:'/scene'}">
+    <router-link :to="{path:'/scene/sceneDetail'}">
       <div class="pic1"></div>
     </router-link>
     <router-link :to="{path:'/order'}">
