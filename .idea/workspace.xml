@@ -1,16 +1,282 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2d0cda3f-3ce1-43b0-8102-b252a07d735f" name="Default Changelist" comment="个人信息的CRUD">
-      <change afterPath="$PROJECT_DIR$/project-name/src/components/manage/VideoUpLoad.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-name/src/components/scene/LeftSideMenu.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneCard.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneIntroduce.vue" afterDir="false" />
+    <list default="true" id="2d0cda3f-3ce1-43b0-8102-b252a07d735f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/markdown-it" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/markdown-it.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.bin/markdown-it.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/append.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/append/constant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/count.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/help.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/store/constant.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/store/false.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/store/true.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/subparsers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action/version.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/action_container.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/argparse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/argument/error.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/argument/exclusive.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/argument/group.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/argument_parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/help/added_formatters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/help/formatter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/namespace.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/lib/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/argparse/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.curveline/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.curveline/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.curveline/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.curveline/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.heatmap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.heatmap/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.heatmap/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.heatmap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.lushu/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.lushu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.lushu/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.markerclusterer/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.markerclusterer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.markerclusterer/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.markerclusterer/rollup.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.markerclusterer/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.texticonoverlay/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.texticonoverlay/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.texticonoverlay/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/bmaplib.texticonoverlay/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/lib/decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/lib/decode_codepoint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/lib/encode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/maps/decode.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/maps/entities.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/maps/legacy.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/maps/xml.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/test/mocha.opts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/entities/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/linkify-it/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/linkify-it/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/linkify-it/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/linkify-it/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/linkify-it/lib/re.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/linkify-it/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/bin/markdown-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/dist/markdown-it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/dist/markdown-it.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/common/entities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/common/html_blocks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/common/html_re.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/common/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/helpers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/helpers/parse_link_destination.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/helpers/parse_link_label.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/helpers/parse_link_title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/parser_block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/parser_core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/parser_inline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/presets/commonmark.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/presets/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/presets/zero.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/renderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/ruler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/blockquote.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/fence.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/heading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/html_block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/lheading.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/paragraph.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/reference.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/state_block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_block/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_core/block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_core/inline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_core/linkify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_core/normalize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_core/replacements.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_core/smartquotes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_core/state_core.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/autolink.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/backticks.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/balance_pairs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/emphasis.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/entity.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/escape.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/html_inline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/image.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/newline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/state_inline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/strikethrough.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/rules_inline/text_collapse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/lib/token.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/markdown-it/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mdurl/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mdurl/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mdurl/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mdurl/decode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mdurl/encode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mdurl/format.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mdurl/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mdurl/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/mdurl/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/.npmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/bower.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/demo/angular.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/angular-sprintf.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/dist/sprintf.min.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/gruntfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/src/angular-sprintf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/src/sprintf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/sprintf-js/test/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/categories/Cc/regex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/categories/Cf/regex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/categories/P/regex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/categories/Z/regex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/uc.micro/properties/Any/regex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/.eslintrc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/.github/ISSUE_TEMPLATE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/.travis.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/README.zh.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/build/compiler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/build/webpack.docs.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/build/webpack.prod.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/build/webpack.test.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/base/bindEvent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/base/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/base/factory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/base/mixins/abstract.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/base/mixins/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/base/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/context-menu/Item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/context-menu/Menu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/controls/CityList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/controls/Control.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/controls/Copyright.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/controls/Geolocation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/controls/MapType.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/controls/Navigation.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/controls/OverviewMap.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/controls/Panorama.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/controls/Scale.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/extra/CurveLine.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/extra/Heatmap.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/extra/Lushu.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/extra/MarkerClusterer.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/layers/Tile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/layers/Traffic.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/map/Map.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/map/MapView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/others/AutoComplete.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/others/Boundary.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/Circle.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/Ground.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/Icon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/InfoWindow.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/Label.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/Marker.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/Overlay.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/PointCollection.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/Polygon.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/Polyline.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/overlays/Symblo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/search/Bus.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/search/Driving.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/search/LocalSearch.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/search/Transit.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/components/search/Walking.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/karma.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/test/map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/test/util/BMap.mock/Map.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/test/util/BMap.mock/create-class.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/test/util/BMap.mock/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/test/util/BMap.mock/spy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/test/util/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/auto-complete.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/base/base-control.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/base/common.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/boundary.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/bus.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/circle.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/city-list.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/control.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/copyright.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/curve-line.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/driving.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/geolocation.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/ground.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/heatmap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/info-window.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/item.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/label.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/local-search.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/lushu.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/map-type.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/map-view.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/map.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/marker-clusterer.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/marker.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/menu.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/navigation.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/overlay.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/overview-map.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/panorama.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/point-collection.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/polygon.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/polyline.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/scale.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/tile.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/traffic.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/transit.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/vue-baidu-map/types/walking.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-name/src/assets/playButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-name/src/components/scene/MyBaiduMap.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/home/Appindex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/home/Appindex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/menu/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/menu/NavMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/sceneIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/sceneIndex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/SceneCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/SceneIntroduce.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneIntroduce.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/router/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,13 +322,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets" />
+      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img\icon" />
+      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\components" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img\icon" />
-      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets" />
-      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -122,7 +388,8 @@
       <workItem from="1612838105650" duration="5513000" />
       <workItem from="1612922760763" duration="28193000" />
       <workItem from="1613179721963" duration="6042000" />
-      <workItem from="1613285914475" duration="9626000" />
+      <workItem from="1613285914475" duration="9658000" />
+      <workItem from="1613355358606" duration="13134000" />
     </task>
     <task id="LOCAL-00001" summary="登陆注册校验完成，首页开发">
       <created>1612844408743</created>
@@ -138,7 +405,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612958967382</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="视频上传">
+      <created>1613296711601</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1613296711601</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +435,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="登陆注册校验完成，首页开发" />
     <MESSAGE value="个人信息的CRUD" />
-    <option name="LAST_COMMIT_MESSAGE" value="个人信息的CRUD" />
+    <MESSAGE value="视频上传" />
+    <MESSAGE value="地图导航" />
+    <option name="LAST_COMMIT_MESSAGE" value="地图导航" />
   </component>
 </project>

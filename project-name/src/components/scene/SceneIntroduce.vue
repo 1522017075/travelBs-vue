@@ -3,13 +3,20 @@
     <div style="display: inline-block; min-width: 90%">
       <el-divider></el-divider>
       <el-page-header @back="goBack" content="景点详情"/>
-      <div style="float: left; height: 300px;margin-left: 80px">
+      <div class="father">
         <el-image
-          style="width: 400px; height: 300px"
+          style="width: 400px; height: 300px;position: absolute;z-index: 15"
           :src="scene.cover"
-          fit="contain"/>
+          v-show="play"
+          @click="handlePlay"
+          fit="cover"/>
+        <img src="../../assets/playButton.png" v-show="play" @click="handlePlay">
+        <video id="video" controls="controls" style="width: 400px; height: 300px" :poster="scene.cover">
+          <source :src="scene.video" type="video/ogg" />
+          <source :src="scene.video"  type="video/mp4">
+        </video>
       </div>
-      <div style="float: left; height: 60px;clear:right;margin-left: 80px">
+      <div style="float: left; height: 60px;clear:right;margin-left: 80px;margin-top: 50px">
         <span style="font-size: 40px">{{scene.name}}</span><br>
         <span style="font-size: 20px">{{scene.author}}({{scene.date}})</span>
       </div>
@@ -18,21 +25,10 @@
       </div>
     </div>
     <div>
-      <el-divider></el-divider>
-      <video
-        :src="scene.video"
-        :controls="videoOptions.controls"
-        class="video-js vjs-big-play-centered vjs-fluid"
-        webkit-playsinline="true"
-        playsinline="true"
-        x-webkit-airplay="allow"
-        x5-playsinline
-        style="width: 100%;"
-        @play="onPlayerPlay"
-        @pause="onPlayerPause"
-        autoplay="autoplay"
-        ref="video">
-      </video>
+      <baidu-map class="map" center="晋祠公园">
+        <bm-map-type :map-types="['BMAP_NORMAL_MAP', 'BMAP_HYBRID_MAP']" anchor="BMAP_ANCHOR_TOP_LEFT"></bm-map-type>
+        <bm-walking start="晋祠" :end="scene.name" :panel="false" :auto-viewport="true" :selectFirstResult="true" location="晋源区"></bm-walking>
+      </baidu-map>
     </div>
   </div>
 </template>
@@ -58,59 +54,48 @@
                 playTime:'',
                 seekTime:'',
                 current:'',
+                play: true
             }
         },
         methods: {
             goBack() {
                 this.$router.go(-1);
             },
-            initVideo() {
-                //原生初始化视频方法
-                let myVideo = this.$refs.video;
-                //ontimeupdate
-                myVideo.ontimeupdate = function() {myFunction()};
-                let _this = this;
-
-                function myFunction(){
-                    let playTime = myVideo.currentTime
-                    setTimeout(function () {
-                        localStorage.setItem("cacheTime",playTime)
-                    },500)
-                    let time = localStorage.getItem("cacheTime")
-                    // 当前播放位置发生变化时触发。
-                    if(playTime - Number(time) > 2){
-                        myVideo.currentTime = Number(time)
-                    }else{
-                    }
-                }
+            handlePlay() {
+                var myVideo = document.getElementById("video");
+                this.play = false;
+                myVideo.play();
             },
-
-                // 播放回调
-                onPlayerPlay(player) {
-                    // this.globalSetting = true
-                    console.log("player play!", player);
-                    // document.getElementsByClassName("vjs-control-bar").style.display = "block";
-                    // document.getElementsByClassName("vjs-control-bar").style.display = "block";
-                },
-
-                // 暂停回调
-                onPlayerPause(player) {
-                    // this.globalSetting.controls = false;
-                    // console.log("player pause!", player);
-                    // var video = document.getElementById("video");
-                    // video.controls=false;
-                    // document.getElementsByClassName("vjs-control-bar").style.display = "none";
-                },
+            handlePause() {
+                this.play = true;
             },
-
-            beforeDestroy() {
-                if (this.player) {
-                    this.player.dispose()
-                }
+        },
+        mounted() {
+            var myVideo = document.getElementById("video");
+            // myVideo.addEventListener('play', this.handlePlay);
+            myVideo.addEventListener('pause', this.handlePause);
         }
     }
 </script>
 
 <style scoped>
+  .father {
+    background-color: white;
+    float: left;
+    height: 300px;
+    margin-left: 80px;
+    margin-top: 50px;
+  }
 
+  .father img{
+    position: absolute;
+    width: 50px;
+    z-index: 16;
+    margin-left: 180px;
+    margin-top: 140px;
+  }
+  .map {
+    width: 100%;
+    height: 500px;
+  }
 </style>

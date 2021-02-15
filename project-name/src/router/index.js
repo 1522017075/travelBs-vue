@@ -12,6 +12,7 @@ import MyInfoManage from "../components/myinfo/MyInfoManage";
 import MyHeadManage from "../components/myinfo/MyHeadManage";
 import SceneDetail from "../components/scene/SceneDetail";
 import SceneIntroduce from "../components/scene/SceneIntroduce";
+import MyBaiduMap from "../components/scene/MyBaiduMap";
 
 Vue.use(Router)
 export default new Router({
@@ -64,6 +65,11 @@ export default new Router({
               path: 'sceneIntroduce',
               name: '/scene/sceneIntroduce',
               component: SceneIntroduce
+            },
+            {
+              path: 'sceneMap',
+              name:'/scene/sceneMap',
+              component: MyBaiduMap,
             }
           ]
         },

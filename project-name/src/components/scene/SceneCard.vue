@@ -19,12 +19,12 @@
             <span>{{item.author}}</span>
           </p>
           <p slot="content" style="width: 300px" class="abstract">{{item.description}}</p>
-          <el-card style="width: 135px;margin-bottom: 20px;height: 233px;float: left;margin-right: 15px" class="book"
+          <el-card style="width: 194px;margin-bottom: 20px;height: 175px;float: left;margin-right: 15px" class="book"
                    bodyStyle="padding:10px" shadow="hover">
             <div class="cover">
   <!--            <img :src="item.cover" alt="封面" fit="contain">-->
               <el-image
-                style="width: 115px; height: 172px"
+                style="width: 172px; height: 115px"
                 :src="item.cover"
                 fit="cover"></el-image>
             </div>
@@ -72,30 +72,29 @@
 
 <style scoped>
   .cover {
-    width: 115px;
-    height: 172px;
+    width: 172px;
+    height: 115px;
     margin-bottom: 7px;
     overflow: hidden;
     cursor: pointer;
   }
 
   img {
-    width: 115px;
-    height: 172px;
+    width: 172px;
+    height: 115px;
     /*margin: 0 auto;*/
   }
 
   .title {
     font-size: 14px;
-    text-align: left;
+    text-align: center;
   }
 
   .author {
     color: #333;
-    width: 102px;
     font-size: 13px;
     margin-bottom: 6px;
-    text-align: left;
+    text-align: center;
   }
 
   .abstract {
