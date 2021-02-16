@@ -4,10 +4,10 @@
     <router-link :to="{path:'/scene/sceneDetail'}">
       <div class="pic1"></div>
     </router-link>
-    <router-link :to="{path:'/order'}">
+    <router-link :to="{path:'/order/orderForm'}">
       <div class="pic2"></div>
     </router-link>
-    <router-link :to="{path:'/myInfo'}">
+    <router-link :to="{path:'/myInfo/myInfoManage'}">
       <div class="pic3"></div>
     </router-link>
   </div>

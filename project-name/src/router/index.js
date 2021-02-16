@@ -13,6 +13,8 @@ import MyHeadManage from "../components/myinfo/MyHeadManage";
 import SceneDetail from "../components/scene/SceneDetail";
 import SceneIntroduce from "../components/scene/SceneIntroduce";
 import MyBaiduMap from "../components/scene/MyBaiduMap";
+import OrderForm from "../components/order/OrderForm";
+import MyReserveManage from "../components/myinfo/MyReserveManage";
 
 Vue.use(Router)
 export default new Router({
@@ -76,7 +78,14 @@ export default new Router({
         {
           path: '/order',
           name: 'Order',
-          component: orderIndex
+          component: orderIndex,
+          children: [
+            {
+              path: 'orderForm',
+              name:'/order/orderForm',
+              component: OrderForm
+            }
+          ]
         },
         {
           path: '/myInfo',
@@ -92,6 +101,11 @@ export default new Router({
               path: 'myHeadManage',
               name: '/myInfo/myHeadManage',
               component: MyHeadManage
+            },
+            {
+              path: 'myReserveManage',
+              name: '/myInfo/myReserveManage',
+              component: MyReserveManage
             }
           ]
         }

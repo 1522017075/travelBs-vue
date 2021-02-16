@@ -71,6 +71,7 @@
             },
         },
         mounted() {
+            // location.reload();
             var myVideo = document.getElementById("video");
             // myVideo.addEventListener('play', this.handlePlay);
             myVideo.addEventListener('pause', this.handlePause);

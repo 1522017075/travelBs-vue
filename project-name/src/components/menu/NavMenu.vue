@@ -40,7 +40,7 @@
             return {
                 navList: [
                     {name: '/scene/sceneDetail', navItem: '景点推荐'},
-                    {name: '/order', navItem: '游玩预定'},
+                    {name: '/order/orderForm', navItem: '游玩预定'},
                     {name: '/myInfo/myInfoManage', navItem: '个人主页'}
                 ],
                 active: '/scene',

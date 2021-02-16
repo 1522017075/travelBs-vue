@@ -8,7 +8,7 @@
       </div>
     </div>
     <el-divider></el-divider>
-    <el-row style="height: 840px;">
+    <el-row style="height: 640px;">
       <router-link :to="{path:'/scene/sceneIntroduce'}">
         <el-tooltip effect="dark" placement="right"
                     v-for="item in scenes"

@@ -9,7 +9,7 @@
           <i class="el-icon-picture-outline"></i>
           <span slot="title">我的头像</span>
         </el-menu-item>
-        <el-menu-item index="3">
+        <el-menu-item index="3" :index="'/myInfo/myReserveManage'">
           <i class="el-icon-mobile-phone"></i>
           <span slot="title">我的预定</span>
         </el-menu-item>
