@@ -52,7 +52,7 @@
                     bookdate: '',
                 },
                 flag: true,
-                active: '2',
+                active: 2,
                 pickerOptions: {
                     disabledDate(time) {
                         return time.getTime() < Date.now();
@@ -69,7 +69,7 @@
                 }).then(successResponse => {
                     if (successResponse.data.code === 200) {
                         this.flag = false;
-                        this.active = '3';
+                        this.active = 3;
 
                     }else{
                         alert("error")

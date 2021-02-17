@@ -18,16 +18,16 @@
       </div>
       <div style="float: left; height: 60px;clear:right;margin-left: 80px;margin-top: 50px">
         <span style="font-size: 40px">{{scene.name}}</span><br>
-        <span style="font-size: 20px">{{scene.author}}({{scene.date}})</span>
+        <span style="font-size: 20px">{{scene.author}}({{scene.scenedate}})</span>
       </div>
       <div style="float: left; width: 600px;clear:both;margin-left: 80px">
         <h4 style="text-align:left;text-indent:25px">  {{scene.description}}</h4><br>
       </div>
     </div>
-    <div>
-      <baidu-map class="map" center="晋祠公园">
+      <div style="min-height: 860px">
+      <baidu-map class="map" center="晋祠公园" v-loading="loading">
         <bm-map-type :map-types="['BMAP_NORMAL_MAP', 'BMAP_HYBRID_MAP']" anchor="BMAP_ANCHOR_TOP_LEFT"></bm-map-type>
-        <bm-walking start="晋祠" :end="scene.name" :panel="false" :auto-viewport="true" :selectFirstResult="true" location="晋源区"></bm-walking>
+        <bm-walking start="晋祠" :end="scene.name" :panel="true" :auto-viewport="true" :selectFirstResult="false" location="太原"></bm-walking>
       </baidu-map>
     </div>
   </div>
@@ -39,13 +39,13 @@
         data () {
             return {
                 scene: {
-                        cover: 'http://localhost:8888/bs/static/caaesi.jpg',
-                        name: '圣母殿',
-                        like: '36',
-                        date: '1023 - 1032',
-                        author: '宋天圣年间',
-                        description: '圣母殿为晋祠古建三绝之一。创建于宋天圣年间（1023年—1032年）。圣母传为叔虞之母邑姜。圣母殿原名“女郎祠”，殿堂宽大疏朗，存有宋代精美彩塑侍女像41尊、明代补塑2尊。这些彩塑中，邑姜居中而座，神态庄严，雍容华贵，凤冠霞帔，是一尊宫廷统治者形象。塑像形象逼真，造型生动，情态各异，是研究宋代雕塑艺术和服饰的珍贵资料。',
-                        video: 'http://localhost:8888/bs/static/f5c55702fdbe4c0f98366ee52fe0ea85.mp4'
+                        cover: '',
+                        name: '',
+                        like: '',
+                        date: '',
+                        author: '',
+                        description: '',
+                        video: ''
                     },
                 videoOptions: {
                     controls:true,
@@ -53,6 +53,7 @@
                 player: null,
                 playTime:'',
                 seekTime:'',
+                loading:true,
                 current:'',
                 play: true
             }
@@ -64,17 +65,28 @@
             handlePlay() {
                 var myVideo = document.getElementById("video");
                 this.play = false;
+                myVideo.src = this.scene.video;
                 myVideo.play();
             },
             handlePause() {
                 this.play = true;
-            },
+            }
         },
         mounted() {
-            // location.reload();
+            this.$axios.post('/scene/getScene',{
+                id: this.$route.query.id
+            }).then(resp => {
+                if(resp.data.code == 200){
+                    this.scene = resp.data.data[0]
+                }
+            })
             var myVideo = document.getElementById("video");
-            // myVideo.addEventListener('play', this.handlePlay);
+            myVideo.src = this.scene.video;
             myVideo.addEventListener('pause', this.handlePause);
+
+            setTimeout(() => {
+                this.loading = false;
+            }, 600);
         }
     }
 </script>

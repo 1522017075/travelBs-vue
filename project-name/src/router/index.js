@@ -61,7 +61,7 @@ export default new Router({
             {
               path: 'sceneDetail',
               name:'/scene/sceneDetail',
-              component: SceneDetail,
+              component: SceneDetail
             },
             {
               path: 'sceneIntroduce',
@@ -71,7 +71,7 @@ export default new Router({
             {
               path: 'sceneMap',
               name:'/scene/sceneMap',
-              component: MyBaiduMap,
+              component: MyBaiduMap
             }
           ]
         },
@@ -79,6 +79,9 @@ export default new Router({
           path: '/order',
           name: 'Order',
           component: orderIndex,
+          meta: {
+            requireAuth: true
+          },
           children: [
             {
               path: 'orderForm',

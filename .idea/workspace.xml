@@ -2,16 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d0cda3f-3ce1-43b0-8102-b252a07d735f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project-name/src/assets/jinciNav2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-name/src/components/myinfo/MyReserveManage.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project-name/src/components/order/OrderForm.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-name/src/assets/out.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/home/Appindex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/home/Appindex.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/menu/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/menu/NavMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/myinfo/LeftSideMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/myinfo/LeftSideMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/order/orderIndex.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/order/orderIndex.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/myinfo/MyHeadManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/myinfo/MyHeadManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/myinfo/MyReserveManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/myinfo/MyReserveManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/order/OrderForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/order/OrderForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/SceneCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/SceneIntroduce.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneIntroduce.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/router/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,13 +56,13 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets" />
-      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img\icon" />
-      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\components" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets" />
+      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img" />
+      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img\icon" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -125,7 +124,8 @@
       <workItem from="1613179721963" duration="6042000" />
       <workItem from="1613285914475" duration="9658000" />
       <workItem from="1613355358606" duration="13159000" />
-      <workItem from="1613456942774" duration="10946000" />
+      <workItem from="1613456942774" duration="11028000" />
+      <workItem from="1613528285954" duration="20242000" />
     </task>
     <task id="LOCAL-00001" summary="登陆注册校验完成，首页开发">
       <created>1612844408743</created>
@@ -155,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613369813842</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="预定游玩">
+      <created>1613471034779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1613471034779</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +187,7 @@
     <MESSAGE value="个人信息的CRUD" />
     <MESSAGE value="视频上传" />
     <MESSAGE value="地图导航" />
-    <option name="LAST_COMMIT_MESSAGE" value="地图导航" />
+    <MESSAGE value="预定游玩" />
+    <option name="LAST_COMMIT_MESSAGE" value="预定游玩" />
   </component>
 </project>

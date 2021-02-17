@@ -20,21 +20,21 @@ Vue.use(BaiduMap, {
   ak: 'YhDTm6W4IMlMGLiKlMPol7OmFmkTGlGp'
 })
 
-// router.beforeEach((to, from, next) => {
-//     if (to.meta.requireAuth) {
-//       if (store.state.user.phone) {
-//         next()
-//       } else {
-//         next({
-//           path: 'login',
-//           query: {redirect: to.fullPath}
-//         })
-//       }
-//     } else {
-//       next()
-//     }
-//   }
-// )
+router.beforeEach((to, from, next) => {
+    if (to.meta.requireAuth) {
+      if (store.state.user.phone) {
+        next()
+      } else {
+        next({
+          path: 'login',
+          query: {redirect: to.fullPath}
+        })
+      }
+    } else {
+      next()
+    }
+  }
+)
 
 /* eslint-disable no-new */
 new Vue({
