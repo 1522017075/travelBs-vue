@@ -15,6 +15,8 @@ import SceneIntroduce from "../components/scene/SceneIntroduce";
 import MyBaiduMap from "../components/scene/MyBaiduMap";
 import OrderForm from "../components/order/OrderForm";
 import MyReserveManage from "../components/myinfo/MyReserveManage";
+import UserManage from "../components/admin/UserManage";
+import OrderManage from "../components/admin/OrderManage";
 
 Vue.use(Router)
 export default new Router({
@@ -111,6 +113,16 @@ export default new Router({
               component: MyReserveManage
             }
           ]
+        },
+        {
+          path: '/userManage',
+          name: 'UserManage',
+          component: UserManage
+        },
+        {
+          path: '/orderManage',
+          name: 'OrderManage',
+          component: OrderManage
         }
       ]
     }

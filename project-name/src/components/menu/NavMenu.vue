@@ -16,7 +16,7 @@
     <el-button @click="drawer = true" type="text" style="margin: 8px;float: right;font-size: 16px">
       {{myInfo.phone}}
     </el-button>
-    <el-avatar :size="50" :src="myInfo.head" style="float: right"></el-avatar>
+    <el-avatar :size="50" :src="myInfo.head" style="float: right" v-show="myInfo.name !== 'admin'"></el-avatar>
     <el-drawer
       title="我是标题"
       :visible.sync="drawer"
@@ -51,8 +51,14 @@
         mounted: function () {
             this.active = this.$route.path
             var info = window.localStorage.getItem('myInfo')
-            this.myInfo = JSON.parse(info)
-            console.log(this.myInfo.head)
+            const myInfo = JSON.parse(info)
+            this.myInfo = myInfo
+
+            if (myInfo.name == 'admin') {
+                this.navList.pop()
+                this.navList.pop()
+                this.navList.push({name: '/userManage', navItem: '用户管理'},{name: '/orderManage', navItem: '预定管理'})
+            }
         },
         methods: {
             loginOut() {

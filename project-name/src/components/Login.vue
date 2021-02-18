@@ -80,8 +80,10 @@
             },
             login() {
                 let path = '/user/checkUser'
+                let toPath = '/index'
                 if (this.isAdmin) {
-                    path = '/login'
+                    path = '/admin/checkAdmin'
+                    toPath = '/scene/sceneDetail'
                 }
                 var _this = this
                 this.$axios
@@ -91,16 +93,14 @@
                     })
                     .then(successResponse => {
                         if (successResponse.data.code === 200) {
-                            // var data = this.loginForm
                             this.openFullScreen2()
                             _this.$store.commit('login', _this.loginForm)
                             console.log("myInfo:" + JSON.stringify(successResponse.data.data[0]))
                             window.localStorage.setItem('myInfo', JSON.stringify(successResponse.data.data[0]))
                             setTimeout(() => {
                                 var path = this.$route.query.redirect
-                                this.$router.replace({path: path === '/' || path === undefined ? '/index' : path})
+                                this.$router.replace({path: path === '/' || path === undefined ? toPath : path})
                             }, 1000)
-                            // location.reload()
                         } else if (successResponse.data.code === 404) {
                             this.$message({
                                 type: 'info',

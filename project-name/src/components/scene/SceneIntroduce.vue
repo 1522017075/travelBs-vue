@@ -18,14 +18,14 @@
       </div>
       <div style="float: left; height: 60px;clear:right;margin-left: 80px;margin-top: 50px">
         <span style="font-size: 40px">{{scene.name}}</span><br>
-        <span style="font-size: 20px">{{scene.author}}({{scene.scenedate}})</span>
+        <span style="font-size: 20px">{{scene.scenedate}}</span>
       </div>
       <div style="float: left; width: 600px;clear:both;margin-left: 80px">
         <h4 style="text-align:left;text-indent:25px">  {{scene.description}}</h4><br>
       </div>
     </div>
       <div style="min-height: 860px">
-      <baidu-map class="map" center="晋祠公园" v-loading="loading">
+      <baidu-map class="map" center="晋祠公园" v-loading="loading" :zoom="17">
         <bm-map-type :map-types="['BMAP_NORMAL_MAP', 'BMAP_HYBRID_MAP']" anchor="BMAP_ANCHOR_TOP_LEFT"></bm-map-type>
         <bm-walking start="晋祠" :end="scene.name" :panel="true" :auto-viewport="true" :selectFirstResult="false" location="太原"></bm-walking>
       </baidu-map>
@@ -42,7 +42,7 @@
                         cover: '',
                         name: '',
                         like: '',
-                        date: '',
+                        scenedate: '',
                         author: '',
                         description: '',
                         video: ''

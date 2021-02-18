@@ -65,6 +65,7 @@
                     // 至于怎么使用看你啦~
                     this.videoForm.videoId = res.data[0]
                     this.videoForm.videoUrl = res.data[0]
+                    this.$emit('onUpload')
                     this.$message.success('视频上传成功！')
                 } else {
                     this.$message.error('视频上传失败，请重新上传！')

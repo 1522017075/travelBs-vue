@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d0cda3f-3ce1-43b0-8102-b252a07d735f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/project-name/src/assets/out.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-name/src/components/admin/OrderManage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-name/src/components/admin/UserManage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-name/src/components/manage/ImgUpLoad.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project-name/src/components/scene/EditForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/myinfo/MyHeadManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/myinfo/MyHeadManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/myinfo/MyReserveManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/myinfo/MyReserveManage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/components/order/OrderForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/order/OrderForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/manage/VideoUpLoad.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/manage/VideoUpLoad.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/menu/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/menu/NavMenu.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/SceneCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/SceneIntroduce.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneIntroduce.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project-name/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/router/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -125,7 +126,8 @@
       <workItem from="1613285914475" duration="9658000" />
       <workItem from="1613355358606" duration="13159000" />
       <workItem from="1613456942774" duration="11028000" />
-      <workItem from="1613528285954" duration="20242000" />
+      <workItem from="1613528285954" duration="20898000" />
+      <workItem from="1613610472693" duration="7906000" />
     </task>
     <task id="LOCAL-00001" summary="登陆注册校验完成，首页开发">
       <created>1612844408743</created>
@@ -162,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613471034779</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="我的预定">
+      <created>1613566208329</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1613566208329</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +197,7 @@
     <MESSAGE value="视频上传" />
     <MESSAGE value="地图导航" />
     <MESSAGE value="预定游玩" />
-    <option name="LAST_COMMIT_MESSAGE" value="预定游玩" />
+    <MESSAGE value="我的预定" />
+    <option name="LAST_COMMIT_MESSAGE" value="我的预定" />
   </component>
 </project>

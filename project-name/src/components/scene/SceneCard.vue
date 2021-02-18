@@ -38,6 +38,7 @@
             </div>
           </el-card>
         </el-tooltip>
+      <edit-form></edit-form>
     </el-row>
     <el-row>
       <el-pagination
@@ -50,9 +51,11 @@
 </template>
 
 <script>
+    import EditForm from "./EditForm";
     export default {
         name: 'SceneCard',
         inject: ['reload'],
+        components: {EditForm},
         data () {
             return {
                 scenes: []
