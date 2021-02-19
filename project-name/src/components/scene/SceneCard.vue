@@ -31,6 +31,10 @@
             <div class="info">
               <div class="title">
                 {{item.name}}
+                <div style="float: right; margin-top: 6px" v-show="myInfo.name == 'admin'">
+                  <el-button size="mini" type="primary" icon="el-icon-edit" circle @click="updateScene(item)"></el-button>
+                  <el-button size="mini" type="danger" icon="el-icon-delete" circle @click="deleteScene(item)"></el-button>
+                </div>
               </div>
             </div>
             <div class="author">
@@ -38,7 +42,7 @@
             </div>
           </el-card>
         </el-tooltip>
-      <edit-form></edit-form>
+      <edit-form ref="editForm" @successAdd="success" v-show="myInfo.name == 'admin'"></edit-form>
     </el-row>
     <el-row>
       <el-pagination
@@ -58,21 +62,54 @@
         components: {EditForm},
         data () {
             return {
-                scenes: []
+                scenes: [],
+                myInfo: ''
             }
         },
         mounted() {
-            this.$axios.post('/scene/list')
-                .then(successResponse => {
-                if (successResponse.data.code === 200) {
-                    this.scenes = successResponse.data.data
-                }
-            })
+            this.getList()
+            var info = window.localStorage.getItem('myInfo')
+            this.myInfo = JSON.parse(info)
         },
         methods:{
             detail(id){
                 this.reload();
                 this.$router.push({path: "/scene/sceneIntroduce", query: {id: id}})
+            },
+            success(){
+                this.getList()
+                this.reload()
+            },
+            updateScene(item){
+                this.$refs.editForm.dialogFormVisible = true
+                this.$refs.editForm.scene = item
+            },
+            deleteScene(item){
+                this.$confirm('是否删除 '+item.name+' ?', '˙○˙ฅ', {
+                    confirmButtonText: '删除',
+                    cancelButtonText: '取消',
+                    type: 'danger'
+                }).then(() => {
+                    this.$axios.post('/scene/deleteScene', {
+                        id: item.id
+                    }).then(resp => {
+                        if (resp && resp.status === 200) {
+                            this.$message({
+                                type: 'success',
+                                message: '删除成功!'
+                            })
+                        }
+                        this.reload()
+                    })
+                })
+            },
+            getList(){
+                this.$axios.post('/scene/list')
+                    .then(successResponse => {
+                        if (successResponse.data.code === 200) {
+                            this.scenes = successResponse.data.data
+                        }
+                    });
             }
         }
     }

@@ -18,7 +18,7 @@
       </div>
       <div style="float: left; height: 60px;clear:right;margin-left: 80px;margin-top: 50px">
         <span style="font-size: 40px">{{scene.name}}</span><br>
-        <span style="font-size: 20px">{{scene.scenedate}}</span>
+        <span style="font-size: 20px">{{scene.scenedate}}</span><br><br>
       </div>
       <div style="float: left; width: 600px;clear:both;margin-left: 80px">
         <h4 style="text-align:left;text-indent:25px">  {{scene.description}}</h4><br>
@@ -41,7 +41,7 @@
                 scene: {
                         cover: '',
                         name: '',
-                        like: '',
+                        scenelike: '',
                         scenedate: '',
                         author: '',
                         description: '',
@@ -55,7 +55,8 @@
                 seekTime:'',
                 loading:true,
                 current:'',
-                play: true
+                play: true,
+                dialogForm: false
             }
         },
         methods: {
