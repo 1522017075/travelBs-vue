@@ -9,7 +9,7 @@
     </el-form-item>
     <el-form-item>
       <el-input type="password" v-model="loginForm.password"
-                auto-complete="off" placeholder="密码"></el-input>
+                auto-complete="off" placeholder="密码" show-password></el-input>
     </el-form-item>
     <el-form :inline="true" class="demo-form-inline">
       <el-form-item>

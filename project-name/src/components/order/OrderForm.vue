@@ -1,5 +1,5 @@
 <template>
-  <div style="min-width: 500px;max-width:500px;margin-left: 30%;height: 520px">
+  <div style="min-width: 500px;max-width:500px;margin-left: 30%;height: 600px">
     <el-steps :active="active" simple>
       <el-step title="预留手机" icon="el-icon-phone"></el-step>
       <el-step title="预定信息" icon="el-icon-edit"></el-step>
@@ -38,6 +38,15 @@
       预订单已提交，后续请在
       <router-link :to="{path:'/myInfo/myReserveManage'}">个人主页 </router-link>查看！
     </h1>
+    <el-divider></el-divider>
+    <h2 style="text-align: left">须知：</h2>
+    <div style="text-align: left">
+      <h4>· 景点开放时间：9:00 — 17:00</h4>
+      <h4>· 购物须知：</h4>
+      <h5>  预订票只包含入门权限，进场消费自理</h5>
+      <h4>· 景点联系电话：18334768171</h4>
+      <h4>· 此在线预订最终解释权归景点所有！</h4>
+    </div>
   </div>
 </template>
 
@@ -65,7 +74,7 @@
                 this.$axios.post('/reserve/add',{
                     phone: this.form.phone,
                     num: this.form.num,
-                    bookdate: this.form.bookdate
+                    bookdate: new Date(this.form.bookdate).getTime()
                 }).then(successResponse => {
                     if (successResponse.data.code === 200) {
                         this.flag = false;

@@ -17,19 +17,6 @@
       {{myInfo.phone}}
     </el-button>
     <el-avatar :size="50" :src="myInfo.head" style="float: right" v-show="myInfo.name !== 'admin'"></el-avatar>
-    <el-drawer
-      title="我是标题"
-      :visible.sync="drawer"
-      :with-header="false"
-      style="padding-top: 60px; padding-bottom: 300px">
-      <div>
-        <span><i class="el-icon-caret-right">手机号 :  </i>{{myInfo.phone}}</span><br>
-        <span><i class="el-icon-caret-right">年龄 :  </i>{{myInfo.age}}</span><br>
-        <span><i class="el-icon-caret-right">性别 :  </i>{{myInfo.gender}}</span><br>
-        <span><i class="el-icon-caret-right">邮箱 :  </i>{{myInfo.mail}}</span><br>
-        <span><i class="el-icon-caret-right">个性签名 :  </i>{{myInfo.profile}}</span><br>
-      </div>
-    </el-drawer>
   </el-menu>
 </template>
 

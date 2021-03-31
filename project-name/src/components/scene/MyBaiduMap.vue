@@ -1,7 +1,7 @@
 <template>
   <baidu-map class="map" center="晋祠公园">
     <bm-navigation anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-navigation>
-    <bm-walking start="晋祠" end="圣母殿" :auto-viewport="true" location="北京"></bm-walking>
+    <bm-walking start="" end="" :auto-viewport="true" location=""></bm-walking>
   </baidu-map>
 </template>
 

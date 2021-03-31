@@ -3,7 +3,7 @@
     <el-menu router :default-active="'/myInfo/myInfoManage'">
       <el-menu-item index="1" :index="'/myInfo/myInfoManage'">
         <i class="el-icon-s-custom"></i>
-        <span slot="title">圣母殿</span>
+        <span slot="title"></span>
       </el-menu-item>
     </el-menu>
   </el-aside>

@@ -27,6 +27,10 @@ export default new Router({
       redirect: "/login"
     },
     {
+      path: '/scene/login',
+      redirect: "/login"
+    },
+    {
       path: '/login',
       name: 'Login',
       component: Login
@@ -39,10 +43,7 @@ export default new Router({
     {
       path: '/index',
       name: 'Index',
-      component: Appindex,
-      meta: {
-        requireAuth: true
-      }
+      component: Appindex
     },
     {
       path: '/findpass',
@@ -81,9 +82,6 @@ export default new Router({
           path: '/order',
           name: 'Order',
           component: orderIndex,
-          meta: {
-            requireAuth: true
-          },
           children: [
             {
               path: 'orderForm',

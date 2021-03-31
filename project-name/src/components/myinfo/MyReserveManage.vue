@@ -12,6 +12,9 @@
             <div v-if="item.sceneid == 0 && item.isOut">
               <el-button style="float: right; padding: 3px 0" type="text" :ref="item.id" @click="recommend(item.id)">点此推荐景点</el-button>
             </div>
+            <div v-if="!item.isOut">
+              <el-button style="float: right; padding: 3px 0" type="text" :ref="item.id" @click="changeTime(item.id, item.bookdate)">改签</el-button>
+            </div>
           </div>
 
           <div class="text">
@@ -58,6 +61,23 @@
         <el-button type="primary" @click="submit()" :disabled="submitDisable">确 定</el-button>
       </div>
     </el-dialog>
+    <el-dialog title="改签时间" :visible.sync="dialogFormVisible2" width="16%">
+      <el-form>
+        <el-form-item>
+            <el-date-picker
+              v-model="changeTimeIs"
+              type="date"
+              placeholder="更改时间"
+              :picker-options="pickerOptions"
+              @change="submitDisable = false">
+            </el-date-picker>
+        </el-form-item>
+      </el-form>
+      <div slot="footer" class="dialog-footer">
+        <el-button @click="dialogFormVisible2 = false">取 消</el-button>
+        <el-button type="primary" @click="changeTimeto()" :disabled="submitDisable">确 定</el-button>
+      </div>
+    </el-dialog>
   </div>
 </template>
 
@@ -68,6 +88,8 @@
             return {
                 phone:'',
                 dialogFormVisible: false,
+                dialogFormVisible2: false,
+                changeTimeIs: '',
                 submitDisable: true,
                 nowTime: '',
                 scenes: [],
@@ -82,6 +104,10 @@
             }
         },
         mounted() {
+            const date = new Date();
+            date.setTime(date.getTime() + 3600 * 1000 * 24);
+            this.changeTimeIs = date.getTime();
+
             var info = window.localStorage.getItem('myInfo')
             this.phone = JSON.parse(info).phone;
 
@@ -119,11 +145,32 @@
                     }
                 })
             },
+            changeTimeto(){
+                this.$axios.post('/reserve/update',{
+                    id:this.recommendId,
+                    bookdate: new Date(this.changeTimeIs).getTime()
+                }).then(successResponse => {
+                    if (successResponse.data.code === 200) {
+                        this.$message({
+                            type: 'success',
+                            message: '改签成功!'
+                        })
+                        this.dialogFormVisible2 = false
+                        this.reload();
+                    }
+                })
+            },
             recommend(num){
                 this.dialogFormVisible = true;
                 this.recommendScene = '';
                 this.submitDisable = true;
                 this.recommendId = num
+            },
+            changeTime(num, bookdate){
+                this.dialogFormVisible2 = true;
+                this.submitDisable = true;
+                this.recommendId = num;
+                this.changeTimeIs = bookdate
             },
             deleteReserve(id){
                 this.$confirm('是否删除该条预订单？', '˙○˙ฅ', {

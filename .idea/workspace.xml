@@ -3,11 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="2d0cda3f-3ce1-43b0-8102-b252a07d735f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/FindPassword.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/FindPassword.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/Login.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/components/admin/OrderManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/admin/OrderManage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/components/admin/UserManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/admin/UserManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/menu/NavMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/menu/NavMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/myinfo/MyInfoManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/myinfo/MyInfoManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/myinfo/MyReserveManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/myinfo/MyReserveManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/order/OrderForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/order/OrderForm.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/EditForm.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/EditForm.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/LeftSideMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/LeftSideMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/MyBaiduMap.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/MyBaiduMap.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/SceneCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneCard.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-name/src/components/scene/SceneIntroduce.vue" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/components/scene/SceneIntroduce.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-name/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/project-name/src/router/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,15 +59,19 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/project-name/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets" />
       <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img" />
       <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\assets\img\icon" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Study\IdeaWorkSpace\travel-vue\project-name\src\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -123,7 +136,15 @@
       <workItem from="1613456942774" duration="11028000" />
       <workItem from="1613528285954" duration="20898000" />
       <workItem from="1613610472693" duration="8106000" />
-      <workItem from="1613698198804" duration="11566000" />
+      <workItem from="1613698198804" duration="11729000" />
+      <workItem from="1614689031023" duration="1507000" />
+      <workItem from="1615253426252" duration="3781000" />
+      <workItem from="1615341586675" duration="1556000" />
+      <workItem from="1615433224975" duration="652000" />
+      <workItem from="1615469186726" duration="841000" />
+      <workItem from="1615597737812" duration="2511000" />
+      <workItem from="1617110101624" duration="4856000" />
+      <workItem from="1617152783959" duration="10902000" />
     </task>
     <task id="LOCAL-00001" summary="登陆注册校验完成，首页开发">
       <created>1612844408743</created>
@@ -174,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613637411316</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="admin功能">
+      <created>1613726357807</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1613726357807</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +230,7 @@
     <MESSAGE value="预定游玩" />
     <MESSAGE value="我的预定" />
     <MESSAGE value="新增景点" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增景点" />
+    <MESSAGE value="admin功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="admin功能" />
   </component>
 </project>

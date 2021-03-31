@@ -85,6 +85,9 @@
                             window.localStorage.setItem('myInfo', JSON.stringify(successResponse.data.data[0]))
                             var info = window.localStorage.getItem('myInfo')
                             this.ruleForm = JSON.parse(info);
+                            setTimeout(() => {
+                                location.reload()
+                            }, 1)
                         }
                     })
             }

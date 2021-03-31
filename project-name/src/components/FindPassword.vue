@@ -55,7 +55,8 @@
                     phone: '',
                     password: '',
                     mail: '',
-                    code: ''
+                    code: '',
+                    returnCode: ''
                 },
                 rules: {
                     password: [
@@ -74,18 +75,26 @@
         methods: {
             submitForm(formName) {
                 this.$refs[formName].validate((valid) => {
-                    if (valid) {
-                        if (successResponse.data.code === 200) {
-
-                        } else if (successResponse.data.code === 404) {
-                            this.$message({
-                                type: 'info',
-                                message: '重置密码失败，请重新获取验证码'
-                            })
-                        }
-                        alert('submit!');
+                    if (valid && this.code == this.returnCode) {
+                        this.$axios.post("/user/updatePass", {
+                            phone: this.ruleForm.phone,
+                            password: this.ruleForm.password
+                        }).then(resp =>{
+                            if(resp.data.code == 200){
+                                setTimeout(() => {
+                                    this.$message({
+                                        type: 'info',
+                                        message: '修改密码成功，即将跳转登陆页面'
+                                    })
+                                    this.$router.replace({path: '/login'})
+                                }, 600)
+                            }
+                        })
                     } else {
-                        console.log('error submit!!');
+                        this.$message({
+                            type: 'info',
+                            message: '有空选项或验证码不正确，请重新输入'
+                        })
                         return false;
                     }
                 });
@@ -97,17 +106,11 @@
                 this.$axios.post("/user/getCode", {
                     phone: this.ruleForm.phone,
                     password: this.ruleForm.password,
-                    mail: this.ruleForm.mail,
-                    code: this.ruleForm.code
+                    mail: this.ruleForm.mail
                 })
                 .then(successResponse => {
                     if (successResponse.data.code === 200) {
-                        alert(successResponse.data.data);
-                    } else if (successResponse.data.code === 404) {
-                        this.$message({
-                            type: 'info',
-                            message: '该手机号已注册，请直接登陆'
-                        })
+                        this.ruleForm.returnCode = successResponse.data.data
                     }
                 })
             }

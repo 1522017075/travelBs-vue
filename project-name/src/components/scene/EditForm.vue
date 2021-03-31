@@ -7,7 +7,12 @@
           <el-input v-model="scene.name" autocomplete="off"></el-input>
         </el-form-item>
         <el-form-item label="创建日期" :label-width="formLabelWidth" prop="scenedate">
-          <el-input v-model="scene.scenedate" autocomplete="off" placeholder="数字，如1076"></el-input>
+<!--          <el-input v-model="scene.scenedate" autocomplete="off" placeholder="数字，如1076"></el-input>-->
+          <el-date-picker
+            v-model="scene.scenedate"
+            type="year"
+            placeholder="选择年">
+          </el-date-picker>
         </el-form-item>
         <el-form-item label="所在朝代" :label-width="formLabelWidth" prop="author">
           <el-input v-model="scene.author" autocomplete="off"  placeholder="文字，如宋朝"></el-input>
@@ -96,7 +101,7 @@
                         this.$axios.post('/scene/insertOrUpdate', {
                             id: this.scene.id,
                             name: this.scene.name,
-                            scenedate: this.scene.scenedate,
+                            scenedate: new Date(this.scene.scenedate).getFullYear(),
                             author: this.scene.author,
                             description: this.scene.description,
                             cover: this.scene.cover,
@@ -106,6 +111,7 @@
                                 this.dialogFormVisible = false
                                 this.$message.success('操作成功！')
                             }
+                            location.reload()
                         })
                         this.$emit('successAdd')
                     }

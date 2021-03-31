@@ -64,13 +64,11 @@
                     this.$axios.post('/user/deleteUser', {
                         id: item.id
                     }).then(resp => {
-                        if (resp && resp.status === 200) {
-                            this.$message({
-                                type: 'success',
-                                message: '删除成功!'
-                            })
-                        }
-                        this.reload()
+                        this.$message({
+                            type: 'success',
+                            message: '删除成功!'
+                        })
+                        location.reload()
                     })
                 })
             }

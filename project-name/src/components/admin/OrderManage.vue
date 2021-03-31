@@ -62,7 +62,7 @@
                 this.orders = []
             },
             handleDelete(item){
-                this.$confirm('是否删除 '+item.phone+' ?', '˙○˙ฅ', {
+                this.$confirm('是否删除 '+item.phone+' ?', '提示', {
                     confirmButtonText: '删除',
                     cancelButtonText: '取消',
                     type: 'danger'
@@ -75,8 +75,8 @@
                                 type: 'success',
                                 message: '删除成功!'
                             })
+                            location.reload()
                         }
-                        this.reload()
                     })
                 })
             }
